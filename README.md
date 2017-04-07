@@ -30,7 +30,7 @@ make build
 
 Run crawler
 ```bash
-python sc_appointment_check.py  <NRIC> <no_of_applicant> <gmail> <password>
+python sc_appointment_check.py  <NRIC> <no_of_applicant> <gmail> <password> 
 ```
 
 Monitor output file
@@ -38,3 +38,9 @@ Monitor output file
 tail -f sc_appointment_check.log
 
 ```
+
+## Disclaimer
+Use at your own risk. 
+
+This script does NOT record your Gmail account or NRIC details.
+The author should NOT be liable for any potential risk caused by using this script.
