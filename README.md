@@ -12,6 +12,11 @@ Follow the [instructions](https://github.com/SeleniumHQ/selenium/wiki/ChromeDriv
 
 **This script is tested with Chrome on Mac only.*
 
+### Enable Gmail less secure app access
+Please refer to the [instructions](https://support.google.com/accounts/answer/6010255?hl=en) by google. 
+
+This is needed for the script to send you notification emails via `smtplib`.
+
 ### Python packages:
 ```
 pip install -r requirements.txt
