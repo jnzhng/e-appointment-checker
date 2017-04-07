@@ -30,7 +30,7 @@ make build
 
 Run crawler
 ```bash
-python sc_appointment_check.py  <NRIC> <no_of_applicant> <gmail> <password> 
+python sc_appointment_check.py your_nric no_of_applicant your_gmail gmail_password [retry_interval_in_seconds]
 ```
 
 Monitor output file

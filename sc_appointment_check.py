@@ -41,7 +41,8 @@ def notify_user(month):
               To: %(TO)s
               Subject: %(SUBJECT)s
 
-              %(TEXT)""" % locals()
+              %(TEXT)
+              """ % locals()
 
     try:
         server = gmail_login()
@@ -93,10 +94,11 @@ def check():
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 5:
-        print("Usage: python %s <NRIC> <no_of_applicant> <gmail> <password>" % __file__)
+    if len(sys.argv) < 5:
+        print("Please refer to the readme file for proper usage.")
     else:
         verify_gmail()
+        retry_interval = sys.argv[5] if len(sys.argv) > 5 else 60
         while True:
             check()
-            time.sleep(60)
+            time.sleep(retry_interval)
